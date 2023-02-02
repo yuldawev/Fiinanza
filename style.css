@@ -1,0 +1,663 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-container .d-flex h5 {
+  font-size: 18px;
+}
+
+.head div h1 {
+  width: 100%;
+  font-weight: 700;
+  text-align: start;
+  font-size: 40px;
+  font-family: var(bold);
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+  position: relative;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+/*  Checkout my other pens on  https://codepen.io/grohit/  */
+
+.head {
+  width: 10%;
+  height: 100%;
+}
+
+.head-container .d-flex img {
+  width: 30px;
+  height: 30px;
+}
+
+.head-img img {
+  width: 100vw;
+  height: 700px;
+}
+
+.head-container {
+  position: absolute;
+  left: 8%;
+  top: 50%;
+}
+
+.head-container .div {
+  width: 120px;
+  height: 50px;
+  margin: 10px 20px;
+}
+
+.head-container button {
+  display: flex;
+  border: 0px;
+  background-color: #318ae6;
+}
+
+.head-container div
+.div {
+  font-weight: 90px;
+  height: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: #318ae6;
+  color: white;
+  text-decoration: none;
+  width: 90px;
+  transition: 0.1s ease;
+}
+
+.head-container .div a{
+  width: 120px;
+  height: 50px;
+  padding: 7px 10px;
+}
+
+.head-container .div > a:hover {
+  gap: 7px;
+  cursor: pointer;
+}
+
+.z {
+  margin: 0px;
+  background-color: #318ae6;
+}
+
+.z h5 {
+  font-size: 20px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px 7px;
+}
+
+.z p {
+  padding: 15px 20px;
+  background-color: rgb(255, 187, 60);
+  font-family: Helvetica;
+  color: white;
+  font-size: 20px;
+  gap: 4px;
+}
+
+.logo {
+  font-family: serif;
+  margin: 10px;
+}
+
+.z .image {
+  margin: 12px 0 5px 1050px;
+}
+
+.z img .image {
+  margin: 0;
+}
+
+a {
+  margin: 7px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #318ae6;
+}
+
+a > h6 {
+  margin: 0 6px;
+  color: #318ae6;
+}
+
+a > h6:hover {
+  color: blue;
+}
+
+aside {
+  padding: 0 55px;
+}
+
+/*------------------------------*/
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+aside .panels {
+  margin: 0 0px;
+  box-shadow: 0 12px 12px 12px rgba(0, 0, 0, 0.1);
+  width: 1300px;
+  min-height: 100px;
+  overflow: hidden;
+  display: flex;
+}
+
+aside .panel {
+  background: #6b0f9c;
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  color: white;
+  /* Safari transitionend event.propertyName === flex */
+  /* Chrome + FF transitionend event.propertyName === flex-grow */
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+  font-size: 20px;
+  background-size: cover;
+  background-position: center;
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+aside .panel1 {
+  background-image: url(image/tarix.jpg);
+}
+
+aside .panel2 {
+  background-image: url(image/oliy-maqsad.jpg);
+}
+
+aside .panel3 {
+  background-image: url(image/qadriyatlar.jpg);
+}
+
+/* Flex Children */
+
+aside .panel > * {
+  height: 100px;
+  margin: 0;
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+}
+
+aside .panel *:first-child {
+  transform: translateY(-100%);
+}
+
+aside .panel *:last-child {
+  transform: translateY(100%);
+}
+
+aside .panel.open-active *:first-child,
+aside .panel.open-active *:last-child {
+  transform: translateY(0);
+}
+
+aside .panel p {
+  margin: 0 20px;
+  height: 140px;
+  width: 211px;
+  text-transform: uppercase;
+  font-family: "Amatic SC", cursive;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-size: 12px;
+}
+
+aside .panel p:nth-child(2) {
+  font-size: 12px;
+}
+
+aside .panel.open {
+  width: 50px;
+  font-size: 40px;
+  flex: 5;
+}
+
+/*-------------------------------*/
+
+button p {
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  letter-spacing: 0;
+  transition: 0.3s ease;
+}
+
+button {
+  width: 120px;
+  height: 30px;
+  color: white;
+  background:  rgb(255, 187, 60);
+  border: 0;
+  margin: 0 5px;
+}
+
+.tarix {
+  display: block;
+}
+.maqsad {
+  display: none;
+}
+
+.qadriyatlar {
+  display: none;
+}
+
+section .video-fon {
+  margin: 50px 30px 30px 210px;
+  position: absolute;
+  background-color: rgb(202, 202, 202);
+  width: 600px;
+  height: 510px;
+  padding: 21px;
+}
+
+section .video video {
+  margin: 10px 30px 20px 150px;
+  width: 600px;
+  height: 510px;
+}
+
+.all {
+  position: relative;
+}
+
+.text,
+h1 {
+  gap: 12px;
+  margin: 20px;
+  width: 1300px;
+}
+
+.m .fon img {
+  position: absolute;
+  width: 100vw;
+  height: 800px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 94%;
+    grid-template-columns: 1fr;
+  }
+
+  .head {
+    width: 10%;
+    height: 100%;
+  }
+
+  .head-container .d-flex h5 {
+    font-size: 15px;
+  }
+
+  .head-container .d-flex img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .head-img img {
+    position: absolute;
+    width: 1446px;
+    height: 700px;
+  }
+
+  .head-container {
+    position: relative;
+    left: 4%;
+    top: 25%;
+  }
+
+  .head-container .div {
+    width: 80px;
+    height: 40px;
+    padding: 1.5px 5px;
+    margin: 50px 10px;
+  }
+
+  .head-container button {
+    display: flex;
+    border: 0px;
+    background-color: #318ae6;
+  }
+
+  .head-container p,
+  .div {
+    font-weight: 90px;
+    height: 0;
+    border-radius: 2.5px;
+    font-size: 15px;
+    background-color: #318ae6;
+    color: white;
+    text-decoration: none;
+    width: 45px;
+    transition: 0.1s ease;
+  }
+
+  .head-container .div:hover {
+    gap: 4px;
+    cursor: pointer;
+  }
+
+  .head-container p:hover {
+    text-decoration: none;
+    margin: 0 3.5px 0 0;
+  }
+
+  .head-container .batafsil {
+    margin: 0 5px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    color: orange;
+    font-size: 15px;
+    transition: 0.1s ease;
+  }
+
+  .head-container .batafsil:hover {
+    text-decoration: none;
+    margin: 0 3.5px;
+  }
+
+  .head div h1 {
+    width: 1000px;
+    font-weight: 700;
+    text-align: start;
+    font-size: 20px;
+    font-family: var(bold);
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #000, #000);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+    position: relative;
+  }
+
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }
+
+  .z {
+    margin: 0px;
+    background-color: #318ae6;
+  }
+
+  .z .image {
+    margin: 12px 0 5px 425px;
+  }
+
+  .head-img img {
+    width: 793px;
+    height: 300px;
+  }
+
+  .z p {
+    font-size: 15px;
+  }
+
+  @keyframes showMenu {
+    top {
+      background-color: #000;
+      left: 0;
+    }
+  }
+
+  aside .logo h2 {
+    display: none;
+  }
+
+  aside .sidebar h3 {
+    display: none;
+  }
+
+  aside .sidebar a {
+    width: 5.6rem;
+  }
+
+  aside .sidebar a:last-child {
+    position: relative;
+    margin-top: 1.8rem;
+  }
+
+  main .insights {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  main .resent-orders {
+    width: 94%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2rem 0 0 8.8rem;
+  }
+
+  main .resent-orders table {
+    width: 83vw;
+  }
+
+  main table thead tr th:last-child,
+  main table thead tr th:first-child {
+    display: none;
+  }
+
+  main table thead tr td:last-child,
+  main table thead tr td:first-child {
+    display: none;
+  }
+}
+
+.nany .fon {
+  box-shadow: 15px 53px 13px 13px rgba(0, 0, 0, 0.25);
+  margin: 0 0 0 50px;
+  position: absolute;
+}
+
+.nany .text {
+  padding: 140px 0;
+  margin: 200px 30px 0;
+  text-align: end;
+  position: relative;
+}
+
+.nany .text h1 {
+  margin: 0 150px 0 0;
+  font-size: 60px;
+}
+
+.nany .text .homiy {
+  margin: 80px 50px 0;
+  position: relative;
+}
+
+.hamkorlar {
+  box-shadow: 0 0 13px 13px rgba(245, 245, 245);
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.hamkorlar .text {
+  padding: 40px;
+  margin: 200px 0 30px 100px;
+  display: flex;
+}
+
+.hamkorlar .text h1 {
+  font-size: 50px;
+}
+
+.hamkorlar .img {
+  margin: 0 125px;
+}
+
+.diller {
+  background-color: whitesmoke;
+ padding: 0;
+}
+
+.diller .h1{
+  margin: 140px 0;
+  font-style: 40px;
+}
+
+.diller .img {
+  margin: 40px;
+}
+
+.head-container .div {
+  font-weight: 90px;
+  height: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: #318ae6;
+  color: white;
+  text-decoration: none;
+  width: 90px;
+  transition: 0.1s ease;
+}
+
+.diller div
+.div {
+  margin: 0 130px;
+  font-weight: 90px;
+  height: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: #318ae6;
+  color: white;
+  text-decoration: none;
+  width: 90px;
+  transition: 0.1s ease;
+}
+
+.diller .div a{
+  font-weight: 90px;
+  height: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  border: 4px solid orange;
+  text-decoration: none;
+  transition: 0.1s ease;
+  width: 120px;
+  height: 50px;
+  padding: 7px 10px;
+}
+
+.diller .div > a:hover {
+  gap: 7px;
+  cursor: pointer;
+}
+.diller .knopka{
+  font-weight: 700;
+}
+
+.diller .col-5{
+  color: #318ae6;
+  margin: 0 20px;
+  width: 45%;
+}
+
+.diller .sh{
+  height: 200px;
+  width: 5px;
+  margin: 0 0 80px;
+  font-weight: 100;
+  background-color: lightgray;
+}
+
+.diller .cad {
+  box-shadow: 0 20px 20px 0px rgba(0,0,0, 0.225);
+  position: relative;
+  margin: 0 240px;
+  height: 350px;
+  width: 1000px;
+  display: flex;
+  padding: 75px 50px;
+  background-color: white;
+}
+
+.diller .image {
+  margin: 230px 0 0;
+  position: absolute;
+  width: 100%;
+}
+
+.diller .text {
+  padding: 40px;
+  font-weight: 700;
+  color: white;
+  position: relative;
+}
+
+.diller .text b, .text h6{
+  margin: 0 180px;
+}
+
+.diller .text h1 {
+  margin: 30px 180px;
+}
+
+.diller .imag{
+  margin: 5px 180px;
+}
+
+.diller .end {
+  font-size: 20px;
+  padding: 40px 0 40px 100px;
+  background-color: #318ae6;
+  width: 101%;
+}
+
+.diller .navbar-brand img {
+  margin: 40px 0 0 0;
+}
+
+.diller .logo{
+  margin: 50px 10px;
+}
+
+.diller .cayt {
+  font-size: 20px;
+  font-weight: 700px;
+  margin: 30px 60px 0;
+  text-align: start;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+}
+
